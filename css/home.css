@@ -185,7 +185,7 @@ a {
 
 .background-container {
   position: relative;
-  background-image: url("../output-onlinepngtools\ \(5\).png");
+  background-image: url("../assests/output-onlinepngtools\ \(5\).png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100%;
@@ -211,7 +211,7 @@ a {
   padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  background-image: url("../pexels-photo-9022091.png");
+  background-image: url("../assests/pexels-photo-9022091.png");
   color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
@@ -297,5 +297,78 @@ a {
   }
   .box-container {
     margin: auto 0;
+  }
+}
+
+/* program-section */
+.program-container {
+  background: #272a31;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+  height: 100%;
+}
+
+.program-container > h2 {
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+}
+
+.program-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.program-content {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+}
+.program-content {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+}
+
+.program-title {
+  color: black;
+  margin: 1rem 0;
+}
+
+.program-subtitle {
+  color: grey;
+}
+
+.program-link {
+  display: flex;
+  justify-content: center;
+}
+
+.program-link a {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .program-container {
+    height: 50vh;
+  }
+
+  .program-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 1rem;
   }
 }
