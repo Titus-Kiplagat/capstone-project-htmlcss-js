@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Lora:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Lora:ital@1&display=swap");
 
 * {
   box-sizing: border-box;
@@ -45,9 +45,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 100px;
+  top: 60px;
   left: -100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   padding: 60px;
   width: 100%;
   gap: 10vh;
@@ -175,5 +175,127 @@ a {
 
   .nav-buttons {
     display: none;
+  }
+}
+
+/* home section */
+.home {
+  height: 100vh;
+}
+
+.background-container {
+  position: relative;
+  background-image: url("../output-onlinepngtools\ \(5\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-wrapper {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.background-title {
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: bold;
+  line-height: 150%;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../pexels-photo-9022091.png");
+  color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.background-title span:first-child {
+  color: #ec5242;
+  font-weight: 400;
+}
+
+.background-text {
+  color: #272a31;
+  padding-top: 2rem;
+}
+
+.summit-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+  max-width: 1240px;
+  width: 100%;
+  min-height: 15vh;
+  background-color: #e5e7e6;
+  padding: 0.5rem 0 1rem 0.5rem;
+  margin-top: auto;
+}
+.summit-info {
+  color: #272a31;
+  font-size: 1rem;
+}
+
+.summit-info p:first-child {
+  margin-bottom: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .background-container {
+    padding: 0;
+  }
+  .background-wrapper {
+    margin: 0 10rem;
+    margin-top: 10rem;
+    width: unset;
+  }
+
+  .background-title {
+    font-size: 3rem;
+  }
+  .background-text {
+    font-size: 1.5rem;
+    padding: 2rem 10rem;
+  }
+
+  .background-content {
+    font-size: 3rem;
+    padding: 5rem 6rem 0 6rem;
+  }
+  .signup-buttons {
+    margin-top: 4rem;
+  }
+  .signup-button {
+    padding: 1rem 1.5rem;
+  }
+
+  .summit-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .summit-info {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+
+  .summit-info p:first-child {
+    margin-bottom: 1rem;
+  }
+  .box-container {
+    margin: auto 0;
   }
 }
