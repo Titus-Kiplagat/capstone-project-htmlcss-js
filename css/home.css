@@ -45,10 +45,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 60px;
+  top: 3.75rem;
   left: -100%;
-  height: calc(100vh - 60px);
-  padding: 60px;
+  height: calc(100vh - 3.75rem);
+  padding: 3.75rem;
   width: 100%;
   gap: 10vh;
   transition: left 0.5s ease-in-out;
@@ -86,8 +86,8 @@ a {
 
 .humbarger-icon,
 .close-icon {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   margin: 0.1rem 1rem 0 0;
 }
 
@@ -155,7 +155,7 @@ a {
     align-items: center;
     width: max-content;
     height: max-content;
-    gap: 40px;
+    gap: 2.5rem;
     top: 0;
     left: 0;
     background: white;
@@ -235,7 +235,7 @@ a {
   flex-direction: column;
   text-align: left;
   gap: 1.5rem;
-  max-width: 1240px;
+  max-width: 77.5rem;
   width: 100%;
   min-height: 15vh;
   background-color: #e5e7e6;
@@ -304,8 +304,8 @@ a {
 .program-container {
   background: #272a31;
   background-image: radial-gradient(black 1px, transparent 0);
-  background-size: 10px 10px;
-  background-position: -19px -19px;
+  background-size: 0.625rem 0.625rem;
+  background-position: -1.1875rem -1.1875rem;
   height: 100%;
 }
 
@@ -313,6 +313,18 @@ a {
   text-align: center;
   color: white;
   padding: 2rem 0;
+  position: relative;
+}
+
+.program-container > h2::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 3px;
+  background-color: #ec5242;
 }
 
 .program-wrapper {
@@ -324,15 +336,15 @@ a {
 }
 
 .program-content {
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   background-color: white;
   border-radius: 0.5rem;
   padding: 3rem 2rem;
 }
 .program-content {
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   background-color: white;
   border-radius: 0.5rem;
   padding: 3rem 2rem;
@@ -380,12 +392,24 @@ a {
   gap: 1rem;
   height: 100%;
   margin: 2rem 0;
-
-  /* margin: 0 10rem; */
 }
+
 .container-title {
   text-align: center;
   color: #272a31;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.container-title::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 3px;
+  background-color: #ec5242;
 }
 .cards-container {
   display: flex;
@@ -393,8 +417,8 @@ a {
   gap: 1rem;
 }
 .speaker-card {
-  max-width: 350px;
-  height: 300px;
+  max-width: 21.875rem;
+  height: 18.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,11 +427,12 @@ a {
   border: 1px solid #d3d3d3;
   border-radius: 0.5rem;
 }
-.speaker-img{
-  width: 100px;
-  height: 100px;
+.speaker-img {
+  width: 6.25rem;
+  height: 6.25rem;
 }
-.speaker-name, .speaker-title {
+.speaker-name,
+.speaker-title {
   text-align: center;
 }
 .speaker-title {
@@ -425,21 +450,21 @@ a {
   }
 
   .speaker-card {
-    min-width: 500px;
-    max-height: 250px;
+    min-width: 31.25rem;
+    max-height: 15.625rem;
     height: 100%;
     flex-direction: row;
   }
 
   .speaker-img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
   }
-  .speaker-name, .speaker-title {
+  .speaker-name,
+  .speaker-title {
     text-align: start;
   }
 }
-
 
 /* partners */
 .partners {
@@ -452,39 +477,51 @@ a {
 .partners-title {
   color: #d3d3d3;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  position: relative;
 }
 
+.partners-title::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 3px;
+  background-color: #ec5242;
+}
 .sponsor-images {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 2rem;
-	padding: 15px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.9375rem 0;
 }
 
 .sponsor-img {
-	width: 150px;
-	height: 100px;
+  width: 9.375rem;
+  height: 6.25rem;
 }
 
 @media screen and (min-width: 768px) {
   .partners-wrapper {
     padding: 2rem 0;
   }
-	.sponsor-images {
-		flex-direction: row;
-		justify-content: center;
-		gap: 20rem;
-		width: 100%;
-	}
+  .sponsor-images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20rem;
+    width: 100%;
+  }
 
-	.sponsor-img {
-		width: 300px;
-		height: 200px;
-	}
+  .sponsor-img {
+    width: 18.75rem;
+    height: 12.5rem;
+  }
 }
 
+/* footer section */
 .footer {
   display: flex;
   flex-direction: column;
@@ -498,10 +535,8 @@ a {
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
   }
 }
-
-
