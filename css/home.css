@@ -352,11 +352,11 @@ a {
   justify-content: center;
 }
 
-.program-link a {
+.program-link > a {
   color: white;
   font-size: 1rem;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin: 2rem 0;
   border-bottom: 1px solid white;
 }
 
@@ -372,3 +372,120 @@ a {
     padding-bottom: 1rem;
   }
 }
+
+/* speakers card styling */
+.speakers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  margin: 2rem 0;
+
+  /* margin: 0 10rem; */
+}
+.container-title {
+  text-align: center;
+  color: #272a31;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.speaker-card {
+  max-width: 350px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.5rem;
+}
+.speaker-img{
+  width: 100px;
+  height: 100px;
+}
+.speaker-name, .speaker-title {
+  text-align: center;
+}
+.speaker-title {
+  color: #ec5242;
+}
+.speaker-info {
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    flex-direction: row;
+    margin: 1rem 10rem;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* partners */
+.partners {
+  height: 100%;
+}
+.partners-wrapper {
+  background-color: #404346;
+}
+
+.partners-title {
+  color: #d3d3d3;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.sponsor-images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	padding: 15px 0 ;
+}
+
+.sponsor-img {
+	width: 150px;
+	height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .partners-wrapper {
+    padding: 2rem 0;
+  }
+	.sponsor-images {
+		flex-direction: row;
+		justify-content: center;
+		gap: 20rem;
+		width: 100%;
+	}
+
+	.sponsor-img {
+		width: 300px;
+		height: 200px;
+	}
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .logo-img {
+  color: #d3d3d3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+  }
+}
+
+
