@@ -394,7 +394,7 @@ a {
 }
 .speaker-card {
   max-width: 350px;
-  min-height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,6 +421,22 @@ a {
     flex-direction: row;
     margin: 1rem 10rem;
     flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .speaker-card {
+    min-width: 500px;
+    max-height: 250px;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .speaker-img {
+    width: 200px;
+    height: 200px;
+  }
+  .speaker-name, .speaker-title {
+    text-align: start;
   }
 }
 
