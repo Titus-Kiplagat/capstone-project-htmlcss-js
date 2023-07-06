@@ -179,32 +179,25 @@ a {
 }
 
 /* home section */
-.home {
-  height: 100vh;
-}
-
 .background-container {
   position: relative;
   background-image: url("../assests/output-onlinepngtools\ \(5\).png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100%;
   text-align: center;
   color: white;
-  margin-top: 10rem;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .background-wrapper {
-  width: 100%;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .background-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   font-style: bold;
   line-height: 150%;
@@ -218,85 +211,73 @@ a {
   background-position: center;
   -webkit-background-clip: text;
   background-clip: text;
+  text-align: left;
 }
 
 .background-title span:first-child {
   color: #ec5242;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .background-text {
-  color: #272a31;
-  padding-top: 2rem;
-}
-
-.summit-details {
-  display: flex;
-  flex-direction: column;
+  color: #11171d99;
+  padding: 1rem;
   text-align: left;
-  gap: 1.5rem;
-  max-width: 77.5rem;
-  width: 100%;
-  min-height: 15vh;
-  background-color: #e5e7e6;
-  padding: 0.5rem 0 1rem 0.5rem;
-  margin-top: auto;
-}
-.summit-info {
-  color: #272a31;
-  font-size: 1rem;
+  border: 5px solid #efe7e6;
+  background-color: rgba(247, 246, 246, 0.2);
 }
 
-.summit-info p:first-child {
-  margin-bottom: 0.2rem;
+.summit-info {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.summit-date {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #404346;
+}
+
+.summit-location {
+  color: #11171d99;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
   .background-container {
-    padding: 0;
+    height: 100vh;
+    padding: 0 20rem 0 0;
   }
+
   .background-wrapper {
-    margin: 0 10rem;
-    margin-top: 10rem;
-    width: unset;
+    max-width: 62.5rem;
+    width: 100%;
+    margin: 10rem 10rem 10rem 20rem;
+    gap: 2rem;
   }
 
   .background-title {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 100%;
   }
+
+  .background-title span:first-child {
+    font-size: 2.5rem;
+  }
+
   .background-text {
     font-size: 1.5rem;
-    padding: 2rem 10rem;
   }
 
-  .background-content {
+  .summit-date {
     font-size: 3rem;
-    padding: 5rem 6rem 0 6rem;
-  }
-  .signup-buttons {
-    margin-top: 4rem;
-  }
-  .signup-button {
-    padding: 1rem 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.01rem;
   }
 
-  .summit-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .summit-info {
+  .summit-location {
     font-size: 1.5rem;
-    text-align: start;
-  }
-
-  .summit-info p:first-child {
-    margin-bottom: 1rem;
-  }
-  .box-container {
-    margin: auto 0;
   }
 }
 
@@ -322,7 +303,7 @@ a {
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 3%;
+  width: 15%;
   height: 3px;
   background-color: #ec5242;
 }
@@ -331,50 +312,92 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 2rem 0;
 }
 
 .program-content {
-  width: 18.75rem;
-  height: 18.75rem;
   background-color: white;
   border-radius: 0.5rem;
-  padding: 3rem 2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ec5242;
+  background-color: rgba(60, 65, 70, 0.7);
 }
-.program-content {
-  width: 18.75rem;
-  height: 18.75rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 3rem 2rem;
+
+.program-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.program-details > img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .program-title {
-  color: black;
+  color: #ec5242;
   margin: 1rem 0;
+  width: 5rem;
+  text-align: center;
 }
 
 .program-subtitle {
-  color: grey;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
-.program-link {
+.program-links {
   display: flex;
   justify-content: center;
 }
 
-.program-link > a {
+.program-links > a:nth-child(1) {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  margin: 2rem 0;
+  margin-top: 4rem;
   border-bottom: 1px solid white;
+  display: none;
+}
+
+.program-links > a:nth-child(2) {
+  color: white;
+  background: #ec5242;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.see-more-button, .see-less-button {
+  display: block;
+  border: 1px solid #efe7e6;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.see-less-button {
+  display: none;
+}
+
+.fa-solid {
+  color: #ec5242;
 }
 
 @media screen and (min-width: 768px) {
   .program-container {
-    height: 50vh;
+    height: 60vh;
+  }
+
+  .program-container > h2::after {
+    width: 3%;
   }
 
   .program-wrapper {
@@ -383,6 +406,28 @@ a {
     padding: 0;
     padding-bottom: 1rem;
   }
+
+  .program-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 18.75rem;
+    height: 18.75rem;
+    padding: 3rem 2rem;
+  }
+
+  .program-details {
+    flex-direction: column;
+  }
+  
+  .program-links > a:nth-child(1) {
+    display: block;
+  }
+  
+  .program-links > a:nth-child(2) {
+    display: none;
+  }
+
 }
 
 /* speakers card styling */
@@ -407,15 +452,17 @@ a {
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  width: 3%;
+  width: 15%;
   height: 3px;
   background-color: #ec5242;
 }
+
 .cards-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .speaker-card {
   max-width: 21.875rem;
   height: 18.75rem;
@@ -424,29 +471,36 @@ a {
   align-items: center;
   margin: 0 auto;
   padding: 1rem;
-  border: 1px solid #d3d3d3;
-  border-radius: 0.5rem;
 }
+
 .speaker-img {
   width: 6.25rem;
   height: 6.25rem;
 }
+
 .speaker-name,
 .speaker-title {
   text-align: center;
 }
+
 .speaker-title {
   color: #ec5242;
 }
+
 .speaker-info {
   text-align: start;
 }
+
 @media screen and (min-width: 768px) {
   .cards-container {
     flex-direction: row;
     margin: 1rem 10rem;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .container-title::after {
+    width: 3%;
   }
 
   .speaker-card {
@@ -460,6 +514,7 @@ a {
     width: 12.5rem;
     height: 12.5rem;
   }
+
   .speaker-name,
   .speaker-title {
     text-align: start;
@@ -470,6 +525,7 @@ a {
 .partners {
   height: 100%;
 }
+
 .partners-wrapper {
   background-color: #404346;
 }
@@ -491,6 +547,7 @@ a {
   height: 3px;
   background-color: #ec5242;
 }
+
 .sponsor-images {
   display: flex;
   flex-direction: column;
@@ -508,6 +565,7 @@ a {
   .partners-wrapper {
     padding: 2rem 0;
   }
+
   .sponsor-images {
     flex-direction: row;
     justify-content: center;
