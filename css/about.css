@@ -196,11 +196,13 @@ a {
 	display: none;
 }
 .about-title {
-	color: white;
+	color: #ec5242;
 	font-size: 1.5rem;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
+	text-align: center;
+	z-index: 2;
 }
 
 .about-container {
@@ -311,7 +313,7 @@ a {
 }
 
 /* shared section */
-.shared-section {
+/* .shared-section {
 	background-color: #E9ECE8;
 }
 .sponsors, .powered-by {
@@ -420,7 +422,7 @@ a {
 		font-weight: 400;
 		width: 100%;
 	}
-}
+} */
 
 /* footer section */
 .footer {
