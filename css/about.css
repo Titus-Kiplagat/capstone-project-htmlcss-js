@@ -180,139 +180,147 @@ a {
 
 /* about section */
 .about-image {
-	background-image: url('../assests/cropped-Sustainability-9-1-scaled-1.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	height: 25rem; 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  background-image: url('../assests/cropped-Sustainability-9-1-scaled-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-img {
-	display: none;
+  display: none;
 }
+
 .about-title {
-	color: #ec5242;
-	font-size: 1.5rem;
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	text-align: center;
-	z-index: 2;
+  color: #ec5242;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  z-index: 2;
 }
 
 .about-container {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .about-wrapper {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .about-contents {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.about-subtitle, .about-summary > h4 {
-	font-size: 1.5625rem;
-	font-weight: 600;
+.about-subtitle,
+.about-summary > h4 {
+  font-size: 1.5625rem;
+  font-weight: 600;
 }
 
-.about-details, .about-buttons {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
+.about-details,
+.about-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.about-details > p, .summary-list {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.8em;
+.about-details > p,
+.summary-list {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8em;
 }
-
 
 .about-buttons {
-	width: max-content;
-	align-self: center;
+  width: max-content;
+  align-self: center;
 }
 
 .about-button {
-	padding: 0.8rem 1rem;
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 500;
-	color: #1aaa2a;
-	border: 3px solid #272a31;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1aaa2a;
+  border: 3px solid #272a31;
 }
 
 .about-summary {
-	margin: 4rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
 }
 
 .summary-title {
-	text-align: center;
-	margin: 2rem 0 1rem 0;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
 }
 
 .about-summary > p {
-	margin: 2rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .summary-list {
-	list-style-type: disc;
-	margin-left: 2rem;
+  list-style-type: disc;
+  margin-left: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-	.about-image {
-		height: 37.5rem;
-	}
-	.about-img {
-		display: block;
-		max-width: 30rem;
-		max-height: 30rem;
-	}
+  .about-image {
+    height: 37.5rem;
+  }
 
-	.about-wrapper {
-		display: flex;
-		align-items: center;
-		gap: 2rem;
-		height: 100%;
-		margin: 3rem 10rem;
-	}
+  .about-img {
+    display: block;
+    max-width: 30rem;
+    max-height: 30rem;
+  }
 
-	.about-details p{
-		align-self: flex-start;
-		font-size: 1.5rem;
-	}
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    margin: 3rem 10rem;
+  }
 
-	.about-summary {
-		margin: 0 10rem;
-		padding-left: 32.5rem;
-		font-size: 1.5rem;
-	}
-	.summary-title {
-		text-align: start;
-	}
-	.summary-lists {
-		padding-left: 2rem;
-	}
-	.summary-list {
-		font-size: 1.5rem;
-	}
+  .about-details p {
+    align-self: flex-start;
+    font-size: 1.5rem;
+  }
+
+  .about-summary {
+    margin: 0 10rem;
+    padding-left: 32.5rem;
+    font-size: 1.5rem;
+  }
+
+  .summary-title {
+    text-align: start;
+  }
+
+  .summary-lists {
+    padding-left: 2rem;
+  }
+
+  .summary-list {
+    font-size: 1.5rem;
+  }
 }
 
 /* shared section */
+
 /* .shared-section {
 	background-color: #E9ECE8;
 }
@@ -438,8 +446,8 @@ a {
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
   }
 }

@@ -199,7 +199,6 @@ a {
 .background-title {
   font-size: 1.5rem;
   font-weight: 900;
-  font-style: bold;
   line-height: 150%;
   padding-top: 0.5rem;
   display: flex;
@@ -210,7 +209,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-clip: text;
-  background-clip: text;
   text-align: left;
 }
 
@@ -317,7 +315,6 @@ a {
 }
 
 .program-content {
-  background-color: white;
   border-radius: 0.5rem;
   padding: 0.5rem;
   display: flex;
@@ -373,7 +370,8 @@ a {
   font-weight: 900;
 }
 
-.see-more-button, .see-less-button {
+.see-more-button,
+.see-less-button {
   display: block;
   border: 1px solid #efe7e6;
   border-radius: 0.2rem;
@@ -419,15 +417,14 @@ a {
   .program-details {
     flex-direction: column;
   }
-  
+
   .program-links > a:nth-child(1) {
     display: block;
   }
-  
+
   .program-links > a:nth-child(2) {
     display: none;
   }
-
 }
 
 /* speakers card styling */
