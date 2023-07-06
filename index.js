@@ -97,8 +97,57 @@ const createCard = (speaker) => {
   return speakerCard;
 };
 
-const cardsContainer = document.querySelector('.cards-container');
-speakers.forEach((speaker) => {
-  const createdCard = createCard(speaker);
-  cardsContainer.appendChild(createdCard);
-});
+const speakersContainer = document.querySelector('.speakers-container');
+const cardsContainer = speakersContainer.querySelector('.cards-container');
+const seeMoreButton = speakersContainer.querySelector('.see-more-button');
+const seeLessButton = speakersContainer.querySelector('.see-less-button');
+const maxDisplayedSpeakers = 3;
+let isExpanded = false;
+
+const createSpeakers = (speakers) => {
+  cardsContainer.innerHTML = ''; // Clear the cards container
+
+  speakers.forEach((speaker) => {
+    const createdCard = createCard(speaker);
+    cardsContainer.appendChild(createdCard);
+  });
+};
+
+const toggleSpeakers = () => {
+  isExpanded = !isExpanded;
+
+  if (isExpanded) {
+    createSpeakers(speakers);
+    seeMoreButton.style.display = 'none';
+    seeLessButton.style.display = 'inline-block';
+  } else {
+    createSpeakers(speakers.slice(0, maxDisplayedSpeakers));
+    seeMoreButton.style.display = 'inline-block';
+    seeLessButton.style.display = 'none';
+  }
+};
+
+seeMoreButton.addEventListener('click', toggleSpeakers);
+seeLessButton.addEventListener('click', toggleSpeakers);
+
+// Function to check if the screen width is less than 768px
+const isSmallScreen = () => window.innerWidth < 768;
+
+// Function to handle the visibility of the "See more" and "See less" buttons
+const handleSeeButtonsVisibility = () => {
+  if (isSmallScreen()) {
+    seeMoreButton.style.display = isExpanded ? 'none' : 'inline-block';
+    seeLessButton.style.display = isExpanded ? 'inline-block' : 'none';
+    createSpeakers(isExpanded ? speakers : speakers.slice(0, maxDisplayedSpeakers));
+  } else {
+    seeMoreButton.style.display = 'none';
+    seeLessButton.style.display = 'none';
+    createSpeakers(speakers);
+  }
+};
+
+// Initial visibility check
+handleSeeButtonsVisibility();
+
+// Event listener for window resize to handle visibility changes
+window.addEventListener('resize', handleSeeButtonsVisibility);
