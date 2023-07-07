@@ -384,5 +384,6 @@ a {
 @media screen and (min-width: 768px) {
   .footer {
     background-color: #272b30;
+    color: white;
   }
 }
