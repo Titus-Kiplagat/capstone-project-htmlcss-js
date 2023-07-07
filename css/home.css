@@ -19,7 +19,7 @@ a {
 .header-container {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 
@@ -35,7 +35,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-color: white;
 }
@@ -125,14 +125,15 @@ a {
 @media screen and (min-width: 768px) {
   .top-header {
     display: block;
+    padding: 0.5rem 10rem;
+    background-color: #272b30;
+
   }
 
   .top-navbar {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    background-color: #272b30;
-    padding: 0.5rem 10rem;
   }
 
   .top-link {
@@ -146,7 +147,7 @@ a {
 
   .navbar {
     width: 100%;
-    padding: 0.5rem 10rem;
+    padding: 0 10rem;
   }
 
   .nav-items {
@@ -210,6 +211,7 @@ a {
   background-position: center;
   -webkit-background-clip: text;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .background-title span:first-child {
@@ -244,14 +246,16 @@ a {
 
 @media screen and (min-width: 768px) {
   .background-container {
-    height: 100vh;
-    padding: 0 20rem 0 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
   }
 
   .background-wrapper {
-    max-width: 62.5rem;
+    max-width: 60rem;
     width: 100%;
-    margin: 10rem 10rem 10rem 20rem;
     gap: 2rem;
   }
 
@@ -261,11 +265,12 @@ a {
   }
 
   .background-title span:first-child {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .background-text {
     font-size: 1.5rem;
+    padding-right: 4rem;
   }
 
   .summit-date {
@@ -322,6 +327,7 @@ a {
   gap: 0.5rem;
   color: #ec5242;
   background-color: rgba(60, 65, 70, 0.7);
+  width: 22.188rem;
 }
 
 .program-details {
@@ -391,7 +397,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .program-container {
-    height: 60vh;
+    height: 100%;
   }
 
   .program-container > h2::after {
@@ -420,6 +426,7 @@ a {
 
   .program-links > a:nth-child(1) {
     display: block;
+    margin-bottom: 3rem;
   }
 
   .program-links > a:nth-child(2) {
@@ -581,7 +588,7 @@ a {
   }
 }
 
-/* footer section */
+/* footer section  */
 .footer {
   display: none;
   flex-direction: column;
