@@ -521,6 +521,7 @@ a {
 /* partners */
 .partners {
   height: 100%;
+  display: none;
 }
 
 .partners-wrapper {
@@ -559,6 +560,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .partners {
+    display: block;
+  }
+
   .partners-wrapper {
     padding: 2rem 0;
   }
@@ -578,9 +583,13 @@ a {
 
 /* footer section */
 .footer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  background-color: white;
+  color: #272b30;
+  width: 100%;
 }
 
 .footer .logo-img {
@@ -589,9 +598,10 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10rem;
+    padding: 1rem 10rem;
   }
 }
