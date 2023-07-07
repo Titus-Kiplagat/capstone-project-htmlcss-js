@@ -70,8 +70,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 [Project Live Link](https://titus-kiplagat.github.io/capstone-project-htmlcss-js/home.html)
 
-You can also [watch this video](https://titus-kiplagat.github.io/capstone-project-htmlcss-js/)  to see a better look of this project.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
