@@ -375,24 +375,13 @@ a {
 /* footer section */
 .footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  text-align: center;
-  background-color: #272b30;
-  color: white;
   padding: 1rem 0;
-  width: 100%;
+  background-color: #272b30;
 }
 
-.footer .logo-img {
-  color: #d3d3d3;
+.footer-content {
+  margin-left: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 10rem;
-  }
-}
