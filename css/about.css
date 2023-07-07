@@ -188,10 +188,10 @@ a {
 }
 
 .about-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   padding: 5rem 0 2rem 0;
 }
 
@@ -386,4 +386,3 @@ a {
     background-color: #272b30;
   }
 }
-
