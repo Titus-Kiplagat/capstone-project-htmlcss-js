@@ -374,6 +374,68 @@ a {
   }
 }
 
+/* partners */
+.partners {
+  height: 100%;
+}
+
+.partners-wrapper {
+  background-color: #404346;
+}
+
+.partners-title {
+  color: #d3d3d3;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.partners-title::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+  height: 3px;
+  background-color: #ec5242;
+}
+
+.sponsor-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.sponsor-img {
+  width: 9.375rem;
+  height: 6.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .partners {
+    display: none;
+  }
+
+  .partners-wrapper {
+    padding: 2rem 0;
+  }
+
+  .sponsor-images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20rem;
+    width: 100%;
+  }
+
+  .sponsor-img {
+    width: 18.75rem;
+    height: 12.5rem;
+  }
+}
+
 /* footer section */
 .footer {
   display: flex;
