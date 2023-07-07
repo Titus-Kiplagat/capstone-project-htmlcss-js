@@ -302,7 +302,7 @@ a {
   }
 
   .logo-image {
-    max-width: 21.875rem;
+    max-width: 40rem;
     border: 1px solid #d3d3d3;
   }
 }
@@ -372,6 +372,10 @@ a {
 
   .summit-events {
     flex-direction: row;
+  }
+
+  .summit-event-link-one, .summit-event-link-two {
+    width: 30rem;
   }
 }
 
