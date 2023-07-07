@@ -186,9 +186,13 @@ a {
   background-attachment: fixed;
   background-position: center;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   padding: 5rem 0 2rem 0;
 }
 
@@ -239,20 +243,28 @@ a {
 @media screen and (min-width: 768px) {
   .about-image {
     height: 100vh;
-    margin-top: 8rem;
-    gap: 8rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-wrapper {
+    gap: 4rem;
+    max-width: 75rem;
+    height: 100%;
   }
 
   .about-title {
     max-width: 70rem;
     margin: 0 auto;
     font-size: 4rem;
+    padding: 0 2rem;
   }
 
   .about-desc {
-    margin: 0 10rem;
     border-radius: 0.5rem;
-    padding: 1rem 10rem;
   }
 }
 
