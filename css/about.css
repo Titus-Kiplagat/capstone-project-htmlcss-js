@@ -308,10 +308,11 @@ a {
 
 /* summit event section */
 .summit-events-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
 .summit-event-title {
@@ -333,7 +334,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .summit-event-link-one,
