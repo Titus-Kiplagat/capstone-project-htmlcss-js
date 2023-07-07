@@ -409,8 +409,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 21.75rem;
-    height: 21.75rem;
+    max-width: 21.875rem;
+    height: 21.875rem;
     padding: 3rem 2rem;
   }
 
