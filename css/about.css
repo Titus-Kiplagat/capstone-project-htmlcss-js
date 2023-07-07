@@ -292,12 +292,16 @@ a {
   padding: 2rem 1rem;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  max-width: 21.875rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .logo-text {
     max-width: 70rem;
+  }
+
+  .logo-image {
+    max-width: 21.875rem;
   }
 }
 
