@@ -329,6 +329,10 @@ a {
   width: 22.188rem;
 }
 
+.program-content:hover {
+  border: 2px solid white;
+}
+
 .program-details {
   display: flex;
   align-items: center;
