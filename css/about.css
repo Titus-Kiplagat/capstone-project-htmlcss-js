@@ -374,7 +374,8 @@ a {
     flex-direction: row;
   }
 
-  .summit-event-link-one, .summit-event-link-two {
+  .summit-event-link-one,
+  .summit-event-link-two {
     width: 30rem;
   }
 }
