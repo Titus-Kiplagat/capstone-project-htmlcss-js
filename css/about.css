@@ -188,7 +188,6 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: space-around;
   gap: 3rem;
   margin-top: 5rem;
   padding: 5rem 0 2rem 0;
@@ -269,7 +268,7 @@ a {
 
 .logo-title {
   color: #272b30;
-  font: 2rem;
+  font-size: 2rem;
   font-weight: 900;
   text-align: center;
 }
@@ -302,7 +301,7 @@ a {
 
 .summit-event-title {
   color: #272b30;
-  font: 2rem;
+  font-size: 2rem;
   font-weight: 900;
   text-align: center;
   padding: 0 1rem;
@@ -344,6 +343,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
 }
+
 .summit-event-link-two {
   background-image: url("../assests/summit-event-two.png");
 }
@@ -359,10 +359,6 @@ a {
 }
 
 /* footer section */
-.footer {
-  /* background-color: #272B30; */
-}
-
 .footer {
   display: flex;
   flex-direction: column;
