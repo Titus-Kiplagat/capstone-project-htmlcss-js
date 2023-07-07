@@ -593,12 +593,18 @@ a {
 
 /* footer section  */
 .footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem 0;
+  display: none;
 }
 
 .footer-content {
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+  }
 }
