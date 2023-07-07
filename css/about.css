@@ -182,10 +182,9 @@ a {
 .about-image {
   background-image: url("../assests/about-background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center;
-  height: 100%;
 }
 
 .about-wrapper {
@@ -242,7 +241,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .about-image {
-    height: 100vh;
+    height: 100%;
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
@@ -253,7 +252,6 @@ a {
   .about-wrapper {
     gap: 4rem;
     max-width: 75rem;
-    height: 100%;
   }
 
   .about-title {
@@ -266,10 +264,15 @@ a {
   .about-desc {
     border-radius: 0.5rem;
   }
+
+  .about-help-details {
+    
+  }
 }
 
 /* logo section */
 .logo-wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
