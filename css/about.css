@@ -308,7 +308,7 @@ a {
   padding: 0 1rem;
 }
 
-.summit-event-text{
+.summit-event-text {
   color: gray;
   text-align: center;
   margin: 1rem 0;
@@ -322,11 +322,12 @@ a {
   gap: 2rem;
 }
 
-.summit-event-link-one, .summit-event-link-two {
+.summit-event-link-one,
+.summit-event-link-two {
   padding: 0 1rem;
   width: 21.875rem;
   height: 18.75rem;
-  background-image: url('../assests/summit-event-one.png');
+  background-image: url("../assests/summit-event-one.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -338,12 +339,13 @@ a {
   font-weight: 700;
 }
 
-.summit-event-link-one > span:first-child, .summit-event-link-two > span:first-child {
+.summit-event-link-one > span:first-child,
+.summit-event-link-two > span:first-child {
   text-transform: uppercase;
   font-weight: 900;
 }
 .summit-event-link-two {
-  background-image: url('../assests/summit-event-two.png');
+  background-image: url("../assests/summit-event-two.png");
 }
 
 @media screen and (min-width: 768px) {
@@ -368,6 +370,7 @@ a {
   text-align: center;
   background-color: #272b30;
   color: white;
+  padding: 1rem 0;
   width: 100%;
 }
 
@@ -380,6 +383,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10rem;
+    padding: 1rem 10rem;
   }
 }
